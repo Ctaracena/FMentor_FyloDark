@@ -8,7 +8,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px;
+  padding: 60px;
 }
 
 header ul {
@@ -80,6 +80,7 @@ header ul a:hover {
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "access security" "collaboration store";
   background-color: #181f2a;
+  padding: 0 14%;
 }
 
 .cards div {
@@ -91,6 +92,11 @@ header ul a:hover {
 
 .cards div h2 {
   font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.cards div p {
+  font-size: 15px;
 }
 
 .cards .access {
@@ -128,22 +134,23 @@ header ul a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #181f2a;
+  padding: 0 80px;
 }
 
 .productive img {
   width: 50%;
-  padding: 50px 5%;
+  padding: 50px 3%;
 }
 
 .productive .details {
   width: 50%;
   color: white;
-  padding-right: 8%;
+  padding: 0 3%;
 }
 
 .productive .details h2 {
   font-size: 40px;
-  padding-right: 40px;
+  padding-right: 60px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -172,7 +179,7 @@ header ul a:hover {
 
 .testimonials {
   background-color: #181f2a;
-  padding: 50px 5%;
+  padding: 60px 5%;
 }
 
 .testimonials .quotes {
@@ -187,18 +194,24 @@ header ul a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-bottom: 200px;
+  padding: 0 2%;
 }
 
 .testimonials .boxes .box {
-  width: 380px;
+  width: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
   background-color: #202a3c;
   color: white;
-  padding: 20px 27px 25px;
+  padding: 20px 25px 25px 35px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
           box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
+}
+
+.testimonials .boxes .box p {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .testimonials .boxes .box .user {
@@ -232,12 +245,14 @@ header ul a:hover {
 }
 
 .testimonials .early-access {
-  width: 65%;
+  position: relative;
+  z-index: 1;
+  width: 66%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: auto;
   border-radius: 5px;
-  padding: 25px 60px;
+  padding: 24px 60px;
   text-align: center;
   background-color: #1c2431;
   color: white;
@@ -261,7 +276,7 @@ header ul a:hover {
 }
 
 .testimonials .early-access .form input {
-  padding: 12px 36% 12px 5%;
+  padding: 16px 38% 16px 6%;
   border-radius: 25px;
   outline: none;
   border: none;
@@ -288,16 +303,129 @@ header ul a:hover {
   background: linear-gradient(90deg, #65e2d9, #339ecc);
   border: none;
   border-radius: 25px;
-  padding: 12px 40px;
+  padding: 16px 40px;
   color: white;
   margin-left: 20px;
   cursor: pointer;
   outline: none;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #0b1523;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.5fr 0.7fr 0.7fr 1fr;
+      grid-template-columns: 3.5fr 0.7fr 0.7fr 1fr;
+  color: white;
+  padding-top: 200px;
+  margin-top: -180px;
+  position: relative;
+  z-index: 0;
+}
+
+footer .info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 120px;
+  padding-right: 90px;
+  margin-bottom: 120px;
+}
+
+footer .info .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .info .info-container .location {
+  margin-top: 30px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .info .info-container .location img {
+  margin-top: 5px;
+}
+
+footer .info .info-container .location p {
+  margin: 0 20px;
+  line-height: 1.6;
+}
+
+footer .info .info-container .contact {
+  margin-top: 15px;
+}
+
+footer .info .info-container .contact .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .info .info-container .contact .phone p {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+footer .info .info-container .contact .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .info .info-container .contact .email p {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+footer .list {
+  margin-top: 70px;
+}
+
+footer .list ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .list ul a li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+footer .social .social-icons {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 20%;
+}
+
+footer .social .social-icons img {
+  width: 36px;
+  height: 36px;
 }
 
 .attribution {
+  text-align: end;
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a {

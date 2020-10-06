@@ -1,0 +1,86 @@
+.testimonials {
+  background-color: $Dark-Blue-main;
+  padding: 50px 5%;
+  .quotes {
+    margin-left: 18px;
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+    .box {
+      width: 380px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: $Dark-Blue-testimonials;
+      color: $White;
+      padding: 20px 27px 25px;
+      box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
+      .user {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .user-info {
+          margin-left: 10px;
+          h3 {
+            font-size: 13px;
+            margin: 0;
+          }
+          p {
+            font-size: 9px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .early-access {
+    width: 65%;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 5px;
+    padding: 25px 60px;
+    text-align: center;
+    background-color: $Dark-Blue-intro-email;
+    color: $White;
+    box-shadow: 10px 10px 5px 0px rgba(11, 21, 35, 0.5);
+    h2 {
+      font-family: $headings;
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+      padding: 0 5%;
+      line-height: 1.6;
+    }
+    .form {
+      margin: 35px 0 15px;
+      input {
+        padding: 12px 36% 12px 5%;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+      }
+      input::placeholder {
+        opacity: 0.5;
+      }
+      .get-started {
+        @include call-to-action;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 40px;
+        color: $White;
+        margin-left: 20px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+

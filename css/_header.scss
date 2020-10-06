@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  ul {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      color: $White;
+      text-decoration: none;
+      font-family: $headings;
+      li {
+        list-style: none;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+
+
+

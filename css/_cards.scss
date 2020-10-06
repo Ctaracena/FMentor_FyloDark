@@ -1,0 +1,30 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "access security"
+  "collaboration store";
+  background-color: $Dark-Blue-main;
+  div {
+    width: 400px;
+    text-align: center;
+    color: $White;
+    margin: 20px auto 70px;
+    h2 {
+      font-family: $headings;
+    }
+  }
+  .access {
+    grid-area: access;
+  }
+  .security {
+    grid-area: security;
+  }
+  .collaboration {
+    grid-area: collaboration;
+  }
+  .store {
+    grid-area: store;
+  }
+}

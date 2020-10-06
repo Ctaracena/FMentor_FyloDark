@@ -1,0 +1,17 @@
+//Primary-colors
+$Dark-Blue-intro-email: rgb(28, 36, 49);
+$Dark-Blue-main: rgb(24, 31, 42);
+$Dark-Blue-footer: rgb(11, 21, 35);
+$Dark-Blue-testimonials: hsl(219, 30%, 18%);
+$White: hsl(0, 0%, 100%);
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+
+//Gradient
+@mixin call-to-action() {
+  background: linear-gradient(90deg, $cyan, $blue);
+}
+
+//Text
+$text: 'Open Sans', sans-serif;
+$headings: 'Raleway', sans-serif;

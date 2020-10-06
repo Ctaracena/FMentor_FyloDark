@@ -1,0 +1,37 @@
+.productive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $Dark-Blue-main;
+  img {
+    width: 50%;
+    padding: 50px 5%;
+  }
+  .details {
+    width: 50%;
+    color: $White;
+    padding-right: 8%;
+    h2 {
+      font-size: 40px;
+      padding-right: 40px;
+      font-family: $headings;
+    }
+    p {
+      line-height: 1.6;
+    }
+    a {
+      border-bottom: 1px solid $cyan;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      color: $cyan;
+      text-decoration: none;
+      img {
+        width: 16px;
+        height: 16px;
+        padding: 0 0 0 6px;
+      }
+    }
+    
+  }
+}

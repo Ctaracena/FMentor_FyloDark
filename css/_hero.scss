@@ -1,0 +1,30 @@
+.hero {
+  text-align: center;
+  color: $White;
+  background-image: url('../images/bg-curvy-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 650px;
+  padding-bottom: 180px;
+    h1 {
+      padding: 20px 20%;
+      font-family: $headings;
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 10px;
+      padding: 0 28%;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 15px;
+      @include call-to-action;
+      border: none;
+      border-radius: 25px;
+      padding: 16px 100px;
+      color: $White;
+    }
+}
+

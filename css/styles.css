@@ -1,0 +1,313 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+
+header ul {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+header ul a li {
+  list-style: none;
+}
+
+header ul a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 650px;
+  padding-bottom: 180px;
+}
+
+.hero h1 {
+  padding: 20px 20%;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.hero p {
+  margin-top: 10px;
+  padding: 0 28%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hero button {
+  margin-top: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 25px;
+  padding: 16px 100px;
+  color: white;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "access security" "collaboration store";
+  background-color: #181f2a;
+}
+
+.cards div {
+  width: 400px;
+  text-align: center;
+  color: white;
+  margin: 20px auto 70px;
+}
+
+.cards div h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.cards .access {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: access;
+}
+
+.cards .security {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: security;
+}
+
+.cards .collaboration {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: collaboration;
+}
+
+.cards .store {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: store;
+}
+
+.productive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #181f2a;
+}
+
+.productive img {
+  width: 50%;
+  padding: 50px 5%;
+}
+
+.productive .details {
+  width: 50%;
+  color: white;
+  padding-right: 8%;
+}
+
+.productive .details h2 {
+  font-size: 40px;
+  padding-right: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+.productive .details p {
+  line-height: 1.6;
+}
+
+.productive .details a {
+  border-bottom: 1px solid #65e2d9;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #65e2d9;
+  text-decoration: none;
+}
+
+.productive .details a img {
+  width: 16px;
+  height: 16px;
+  padding: 0 0 0 6px;
+}
+
+.testimonials {
+  background-color: #181f2a;
+  padding: 50px 5%;
+}
+
+.testimonials .quotes {
+  margin-left: 18px;
+}
+
+.testimonials .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.testimonials .boxes .box {
+  width: 380px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #202a3c;
+  color: white;
+  padding: 20px 27px 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
+          box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
+}
+
+.testimonials .boxes .box .user {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .boxes .box .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.testimonials .boxes .box .user .user-info {
+  margin-left: 10px;
+}
+
+.testimonials .boxes .box .user .user-info h3 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.testimonials .boxes .box .user .user-info p {
+  font-size: 9px;
+  margin: 0;
+}
+
+.testimonials .early-access {
+  width: 65%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  border-radius: 5px;
+  padding: 25px 60px;
+  text-align: center;
+  background-color: #1c2431;
+  color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(11, 21, 35, 0.5);
+          box-shadow: 10px 10px 5px 0px rgba(11, 21, 35, 0.5);
+}
+
+.testimonials .early-access h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+}
+
+.testimonials .early-access p {
+  font-size: 14px;
+  padding: 0 5%;
+  line-height: 1.6;
+}
+
+.testimonials .early-access .form {
+  margin: 35px 0 15px;
+}
+
+.testimonials .early-access .form input {
+  padding: 12px 36% 12px 5%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+.testimonials .early-access .form input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.testimonials .early-access .form input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.testimonials .early-access .form input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.testimonials .early-access .form input::placeholder {
+  opacity: 0.5;
+}
+
+.testimonials .early-access .form .get-started {
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  max-width: 1440px;
+  background-color: #1c2431;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

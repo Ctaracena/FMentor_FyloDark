@@ -6,9 +6,9 @@
   "access security"
   "collaboration store";
   background-color: $Dark-Blue-main;
-  padding: 0 14%;
+  padding: 0 14vw;
   div {
-    width: 400px;
+    width: 27.7vw;
     text-align: center;
     color: $White;
     margin: 20px auto 70px;
@@ -31,5 +31,50 @@
   }
   .store {
     grid-area: store;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    padding: 0 5vw;
+    div {
+      width: 36vw;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "access" 
+    "security"
+    "collaboration" 
+    "store";
+    padding: 0 5vw;
+    div {
+      width: 85vw;
+      margin: 40px auto 40px;
+      h2 {
+        font-family: $headings;
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .access {
+      grid-area: access;
+    }
+    .security {
+      grid-area: security;
+    }
+    .collaboration {
+      grid-area: collaboration;
+    }
+    .store {
+      grid-area: store;
+    }
   }
 }

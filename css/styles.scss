@@ -2,14 +2,14 @@
 @import '_header';
 @import '_hero';
 @import '_cards';
-@import '_productive';
+/* @import '_productive';
 @import '_testimonials';
-@import '_footer';
+@import '_footer'; */
 
 body {
   max-width: 1440px;
   background-color: $Dark-Blue-intro-email;
   font-family: $text;
-  margin: 0;
+  margin: 0 auto;
 }
 

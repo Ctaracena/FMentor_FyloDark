@@ -374,6 +374,7 @@ header ul li a:hover {
 
 .testimonials .boxes .box {
   width: 25vw;
+  max-width: 380px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;

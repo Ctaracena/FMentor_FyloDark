@@ -1,24 +1,24 @@
 .testimonials {
   background-color: $Dark-Blue-main;
-  padding: 60px 5%;
+  padding: 60px 5vw;
   .quotes {
-    margin-left: 18px;
+    margin-left: 1.25vw;
   }
   .boxes {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 200px;
-    padding: 0 2%;
+    padding: 0 2vw;
     .box {
-      width: 360px;
+      width: 25vw;
       box-sizing: border-box;
       border-radius: 5px;
       background-color: $Dark-Blue-testimonials;
       color: $White;
-      padding: 20px 25px 25px 35px;
+      padding: 1.38vw 1.6vw 1.6vw 2.45vw;
       box-shadow: 10px 10px 5px 0px rgba(28, 36, 49, 0.5);
       p {
-        font-size: 14px;
+        font-size: 1vw;
         line-height: 1.6;
       }
       .user {
@@ -48,7 +48,7 @@
   .early-access {
     position: relative;
     z-index: 1;
-    width: 66%;
+    width: 840px;
     box-sizing: border-box;
     margin: auto;
     border-radius: 5px;
@@ -92,3 +92,107 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    padding: 60px 2.5vw;
+    .quotes {
+      margin-left: 1.25vw;
+    }
+    .boxes {
+      .box {
+        width: 28vw;
+        p {
+          font-size: 1.2vw;
+        }
+      }
+    }
+  
+    .early-access {
+      width: 700px;
+      padding: 20px 50px;
+      h2 {
+        font-size: 30px;
+      }
+      .form {
+        margin: 35px 0 12px;
+        input {
+          padding: 16px 30% 16px 5%;
+        }
+        .get-started {
+          padding: 16px 30px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .testimonials {
+    padding: 60px 2.5vw;
+    .quotes {
+      margin-left: 8vw;
+    }
+    .boxes {
+      flex-direction: column;
+      margin-bottom: 150px;
+      .box {
+        margin: 20px auto;
+        width: 60vw;
+        p {
+          font-size: 2vw;
+        }
+      }
+    }
+
+    .early-access {
+      width: 550px;
+      padding: 20px 30px;
+      h2 {
+        font-size: 30px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 15px;
+        input {
+          margin: 20px 0;
+          padding: 16px 30% 16px 5%;
+        }
+        .get-started {
+          padding: 16px 30px;
+          margin: 0;
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials {
+    padding: 60px 2.5vw;
+    .quotes {
+      margin-left: 8vw;
+    }
+    .boxes {
+      margin-bottom: 100px;
+      .box {
+        width: 80vw;
+        p {
+          font-size: 3.3vw;
+        }
+      }
+    }
+
+    .early-access {
+      width: 350px;
+      padding: 20px 20px;
+      h2 {
+        font-size: 30px;
+      }
+      .form {
+        margin: 15px 0 15px;
+      }
+    }
+  } 
+}

@@ -54,12 +54,12 @@ footer {
     margin-top: 70px;
     ul {
       padding: 0;
-      a {
-        color: $White;
-        text-decoration: none;
-        li {
-          list-style: none;
-          margin-bottom: 16px;
+      li {
+        list-style: none;
+        margin-bottom: 16px;
+        a {
+          color: $White;
+          text-decoration: none;
         }
       }
     }

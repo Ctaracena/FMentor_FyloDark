@@ -23,17 +23,17 @@ header ul {
       justify-content: space-around;
 }
 
-header ul a {
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
   color: white;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
 }
 
-header ul a li {
-  list-style: none;
-}
-
-header ul a:hover {
+header ul li a:hover {
   text-decoration: underline;
 }
 
@@ -65,7 +65,7 @@ header ul a:hover {
   header ul {
     width: 60%;
   }
-  header ul a {
+  header ul li a {
     font-size: 14px;
   }
 }
@@ -451,7 +451,7 @@ header ul a:hover {
 }
 
 .testimonials .early-access .form input {
-  padding: 16px 38% 16px 6%;
+  padding: 16px 36% 16px 6%;
   border-radius: 25px;
   outline: none;
   border: none;
@@ -478,9 +478,9 @@ header ul a:hover {
   background: linear-gradient(90deg, #65e2d9, #339ecc);
   border: none;
   border-radius: 25px;
-  padding: 16px 40px;
+  padding: 16px 35px;
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
   cursor: pointer;
   outline: none;
   font-weight: 700;
@@ -683,14 +683,14 @@ footer .list ul {
   padding: 0;
 }
 
-footer .list ul a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .list ul a li {
+footer .list ul li {
   list-style: none;
   margin-bottom: 16px;
+}
+
+footer .list ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 footer .social .social-icons {

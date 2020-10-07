@@ -8,16 +8,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    a {
-      color: $White;
-      text-decoration: none;
-      font-family: $headings;
-      li {
-        list-style: none;
+    li {
+      list-style: none;
+      a {
+        color: $White;
+        text-decoration: none;
+        font-family: $headings;
       }
-    }
-    a:hover {
-      text-decoration: underline;
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -50,8 +50,10 @@ header {
     }
     ul {
       width: 60%;
-      a {
-        font-size: 14px;
+      li {
+        a {
+          font-size: 14px;
+        }
       }
     }
   }
